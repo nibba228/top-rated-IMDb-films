@@ -1,4 +1,4 @@
-import requests
+from requests import get
 from bs4 import BeautifulSoup
 
 
@@ -6,7 +6,7 @@ def get_response():
     """Get response from GET request"""
 
     url = 'https://www.imdb.com/chart/top'
-    response = requests.get(url)
+    response = get(url)
     return response
 
 
